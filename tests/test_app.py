@@ -5,7 +5,7 @@ def test_home_page():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"AI DEVOPS OPTIMIZER" in response.data
+    assert b"AI DEVOPS OPTIMIZER BROKEN" in response.data
     assert b"16014123017" in response.data
 
 
